@@ -19,6 +19,7 @@ Etter brukeren har skrevet inn navnet sitt og trykket på "Send" på registrerin
 # Repo
 
  - # V2 - RestAPI - Scoreboard NextJs
+    ### (Ikke helt oppdatert enda)
     ### NextJS - Python - Flask_Restful - Firebase
     Flask app:
 
