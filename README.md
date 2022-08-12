@@ -1,6 +1,6 @@
 
 
-# Ineractive-Scoreboard - Retropie
+# Dynamic-Scoreboard - Retropie
 
 Arkadespill har en sjarm mange savner og alternativer som Retropi har blitt svært populert.
 
