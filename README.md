@@ -14,9 +14,12 @@ Kundene spiller et game med Donky Kong 3. Etter spillet skanner de en QR-kode p�
 Vi har en stor skjerm i lokalet med scoreboard-nettsiden i fullscreen. 
 Etter kunden har skrevet inn navnet sitt og trykket p책 "Send" p책 registrerings-siden, oppdateres scoreboardet seg automatisk i forhold til score value, med kunden sin highscore.
 
-#Repo
+# Repo
 
-V2 - Versjon 2 best책r av en flask-app som ##1. ser etter endringer i en highscore.dat fil, og ##2. sender ut highscoren s
+V2 - Versjon 2 best책r av en flask-app som 
+# 1.
+Ser etter endringer i en highscore.dat fil, og ##2. sender ut highscoren s
+# 2.
 
 ser etter endringer i en .dat highscorefil fra Retropien. Etter en endring er registrert blir hex-tabellen loaded og highscoren til kunden blir plukket ut og konvertert til UTF-8.
 Denne verdien blir s책 oppdatert som nyeste verdi
