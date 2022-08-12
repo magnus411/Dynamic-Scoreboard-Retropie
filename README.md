@@ -17,6 +17,7 @@ Vi har en stor skjerm i lokalet med scoreboard-nettsiden i fullscreen.
 Etter kunden har skrevet inn navnet sitt og trykket på "Send" på registrerings-siden, oppdateres scoreboardet seg automatisk i forhold til score value, med kunden sin highscore.
 
 # Dependencies
+NextJS - Python - Flask_Restful - Firebase
 
 # Repo
 
