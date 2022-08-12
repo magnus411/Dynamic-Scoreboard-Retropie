@@ -14,7 +14,7 @@ Jeg startet med Donky Kong 3.
 Kundene spiller et game med Donky Kong 3. Etter spillet skanner de en QR-kode på et ark ved Retropien. QR-Koden fører de til en nettside der highscore'en deres vises og de får mulighet til å inpute et navn.
 
 Vi har en stor skjerm i lokalet med scoreboard-nettsiden i fullscreen. 
-Etter kunden har skrevet inn navnet sitt og trykket på "Send" på registrerings-siden, oppdateres scoreboardet seg automatisk i forhold til score value, med kunden sin highscore.
+Etter brukeren har skrevet inn navnet sitt og trykket på "Send" på registrerings-siden, oppdateres scoreboardet seg automatisk i forhold til score value, med brukeren sin highscore.
 
 # Repo
 
@@ -23,7 +23,7 @@ Etter kunden har skrevet inn navnet sitt og trykket på "Send" på registrerings
     Flask app:
 
     - Flask-appen er et REST API som sender ut nyeste highscore verdi
-    - Flask-appen ser etter endringer i en highscore.dat fil. Etter en endring er registrert, blir hex-tabellen loaded og highscoren til kunden blir plukket ut og konvertert til UTF-8. Denne verdien blir så oppdatert som nyeste verdi
+    - Flask-appen ser etter endringer i en highscore.dat fil. Etter en endring er registrert, blir hex-tabellen loaded og highscoren til brukeren blir plukket ut og konvertert til UTF-8. Denne verdien blir så oppdatert som nyeste verdi
 
     Next-JS:
     - NextJS bruker API-et fra Flask-appen og drar inn nyeste highscore verdi og viser den på registerings siden.
@@ -37,8 +37,8 @@ Etter kunden har skrevet inn navnet sitt og trykket på "Send" på registrerings
     - Score.py ser etter endringer i highscore.dat filen. Etter en endring er registert blir den nyeste verdien skrevet til en .csv fil.
     
     Flask app:
-    - Når kunden går inn på registerings siden via QR-Koden, blir den nyeste scoren pullet fra .csv filen
-    - Etter kunden har skevet inn navnet og trykket på Send, blir navnet og scoren lagret i en ny csv og en Reload() funsjon blir aktivert
+    - Når brukeren går inn på registerings siden via QR-Koden, blir den nyeste scoren pullet fra .csv filen
+    - Etter brukeren har skevet inn navnet og trykket på Send, blir navnet og scoren lagret i en ny csv og en Reload() funsjon blir aktivert
     - Reload() funsjonen trigger en SocketIo emit til Scoreboard siden.
     - Emiten blir tatt i mot og aktiverer en funsjon som reloader Scoreboard-siden
     - Reloaden gjør at Scoreboard-siden drar inn .csv filen med oppdatert navn og score
