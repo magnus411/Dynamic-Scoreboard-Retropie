@@ -23,7 +23,7 @@ Etter brukeren har skrevet inn navnet sitt og trykket på "Send" på registrerin
     ### NextJS - Python - Flask_Restful - Firebase
     Flask app:
 
-    - Flask-appen er et REST API som sender ut nyeste highscore verdi
+    - Flask-appen er et API Endpoint som sender ut nyeste highscore verdi
     - Flask-appen ser etter endringer i en highscore.dat fil. Etter en endring er registrert, blir hex-tabellen loaded og highscoren til brukeren blir plukket ut og konvertert til UTF-8. Denne verdien blir så oppdatert som nyeste verdi
 
     Next-JS:
