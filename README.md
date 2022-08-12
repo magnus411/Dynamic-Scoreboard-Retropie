@@ -50,6 +50,18 @@ Etter kunden har skrevet inn navnet sitt og trykket på "Send" på registrerings
 
 Husk å endre path for highscore.dat.
 
+# Run
+
+python app.py - Kjører Flask serveren
+
+npm run dev - start development server
+
+npm run build - bygger production build
+
+npm run start kjører den ferdigbygde production builden
+
+
+# Sorry for bad commenting!
 
 
 
