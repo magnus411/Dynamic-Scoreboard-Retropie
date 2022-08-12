@@ -20,7 +20,7 @@ Etter kunden har skrevet inn navnet sitt og trykket på "Send" på registrerings
 
 # Repo
 
- - # V2
+ - # V2 - RestAPI - Scoreboard NextJs
     ### NextJS - Python - Flask_Restful - Firebase
     Flask app:
 
@@ -32,7 +32,7 @@ Etter kunden har skrevet inn navnet sitt og trykket på "Send" på registrerings
     - Etter registering blir Firebase databasen oppdatert med nyeste verdi
     - Scoreboard siden blir dynamisk oppdatert med SWR
 
-- # V1
+- # V1 - Old
     
     ### Python - Flask - SocketIo
     Score.py:
