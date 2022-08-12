@@ -1,0 +1,20 @@
+Åpne putty
+
+10.10.30.89
+pi
+apsberry
+
+source ./RetroPie/RetroWeb/bin/activate
+
+
+cd RetroPie/web
+
+python3 score.py
+
+
+cd web 
+python -m flask run --host=10.10.30.89
+
+
+/home/pi/RetroPie/web
+/home/pi/RetroPie/roms/arcade/mame2003/hi

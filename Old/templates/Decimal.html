@@ -1,0 +1,150 @@
+<div id="rand">
+	{{x}}
+</div>
+
+ $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    (function(){
+        $.getJSON(
+            $SCRIPT_ROOT+"/Name", // Your AJAX route here
+            function(data) {
+                console.log(data)
+            }
+        );
+        setTimeout(arguments.callee, 10000);
+    })();'
+
+
+
+
+    n1:$("n1")
+
+
+
+
+    <script type="text/javascript"> 
+    $(document).on('submit','#name',function(e) 
+                { 
+    console.log('hello'); 
+    e.preventDefault(); 
+    $.ajax({ 
+        type:'POST', 
+        url:'/Name', 
+        data:{ }
+    }) 
+    }); 
+</script> 
+
+
+
+
+  #last = data[-1][0]
+    if request.method == "POST": 
+        #name = request.form.get("n1") 
+        name = "asdasdasdsada"
+        return jsonify({'name': name})
+
+    else:
+        return render_template("form.html")
+
+
+ name = request.form["name"]
+    
+    #if name:
+        #newName = name[::-1]
+    return jsonify({"name": "newName"})
+    
+    #last = data[-1][0]
+    #if request.method == "POST": 
+        #name = request.form.get("n1") 
+        #name = "asdasdasdsada"
+        #return jsonify({'name': name})
+
+    #else:
+    #return render_template("form.html")
+
+        
+        #if name == CurrentData[-1][1]:
+            #pass
+        #else:
+            #CurrentData.append([last, name])
+            
+            
+            #with open(r'C:\Users\support\Documents\Mameflask\leaderboard2.csv', 'a', newline='') as file:
+                #writer = csv.writer(file)
+               # writer.writerow([name, last])
+        
+        
+        
+        
+
+        
+        
+    #name = request.form.get("n1")
+
+
+
+<svg class="ico-cup">
+            <use xlink:href="#cup"></use>
+        </svg>
+
+
+
+
+<table>
+    <tr>
+        {% for header in headings %}
+        <th>{{header}}</th>
+        {% endfor %}
+    </tr>
+
+    {% for row in data %}
+    <tr>
+        {% for cell in row %}
+        <td>{{cell}}</th>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+
+
+</table>
+
+
+<script>
+    function reset() {
+        $.ajax({
+            url: "/GetData",
+            type: 'Get'
+        });
+        }
+            setInterval(function() {
+            $.ajax({'url': "/GetData", success: function(result){
+                console.log(result)
+        }});
+    }, 1000);
+</script>
+
+
+
+
+
+
+
+{%if (data| length) >= 10 %}
+    {% for i in range(0,11) %}
+
+    .leaderboard ol li:nth-child({{i}}) {
+        background: #fa6855;
+    }
+    {% endfor %}
+{%else%}
+
+
+{% for i in range(0,11) %}
+
+    .boxx ol li:nth-child({{i}}) {
+            background: #fa6855;
+            padding-left: 10%;
+    }
+
+{% endfor %}
